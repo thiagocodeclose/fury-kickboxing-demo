@@ -1,0 +1,16 @@
+:root {
+  --amber:   #FF6F00;
+  --fire:    #FF8F00;
+  --bg:      #0A0A0A;
+  --surface: #141414;
+  --text:    #F5F5F5;
+  --muted:   #666666;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); }
+
+/* Reveal animations */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
